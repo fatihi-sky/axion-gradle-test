@@ -1,0 +1,6 @@
+
+task release() {
+    doLast {
+        println('Releasing nft')
+    }
+}
