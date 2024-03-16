@@ -1,6 +1,13 @@
+plugins {
+    id "myteam.release-conventions"
+}
 
-task release() {
-    doLast {
-        println('Releasing service')
+ext {
+    appName = 'a-service'
+}
+
+scmVersion {
+    tag {
+        prefix = project.ext.appName
     }
 }

@@ -1,0 +1,9 @@
+plugins {
+    id 'pl.allegro.tech.build.axion-release'
+}
+
+scmVersion {
+    versionIncrementer 'incrementMinor'
+}
+
+project.version = scmVersion.version

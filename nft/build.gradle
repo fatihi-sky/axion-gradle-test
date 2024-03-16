@@ -1,6 +1,13 @@
+plugins {
+    id "myteam.release-conventions"
+}
 
-task release() {
-    doLast {
-        println('Releasing nft')
+ext {
+    appName = 'an-nft'
+}
+
+scmVersion {
+    tag {
+        prefix = project.ext.appName
     }
 }
